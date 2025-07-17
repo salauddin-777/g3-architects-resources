@@ -171,18 +171,24 @@ main > section {
         margin: 0 auto;
     }
     .team-image-container, 
-    .facts-container{
+    .facts-container,
+    .sponsor-companys{
         grid-template-columns: 1fr;
     }
     .our-features{
         margin-left: 20px;
     }
-    .facts-container{
+    .facts-container
+    {
         justify-items: center;
         gap: 24px;
     }
     .fact-description{
         width: 100%;
+    }
+    .sponsor-companys{
+        justify-items: center;
+        gap: 50px;
     }
 }
 
@@ -191,5 +197,11 @@ main > section {
 @media screen and (min-width:576px) and (max-width:992px) {
     .teams{
         flex-direction: column;
+    }
+    .facts-container, .sponsor-companys{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;
+        gap: 50px;
     }
 }
